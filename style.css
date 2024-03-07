@@ -41,20 +41,23 @@ header {
     display: grid;
     grid-template-columns: 1fr 12fr 1fr 1fr 4fr 1fr;
     overflow: auto;
-    /* align-items: center;
-    justify-content: center; */
     height: 100%;
+    align-items: center;
+    justify-items: center;
 }
 
 #nav-bar button {
-    max-height: 60%;
-    width: auto;
-    overflow: auto;
+    height: auto;
+    width: 40%;
+    /* overflow:auto;
+    align-self: center; */
 }
 
-#search {
-    max-height: 100%;
-}
+
+/* #search {
+    height: auto;
+    width: 40%;
+} */
 
 #sidebar {
     grid-area: 2 / 1 / 5 / 2;
