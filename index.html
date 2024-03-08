@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
         <header>
@@ -13,17 +18,17 @@
                 <p>Dashboard</p>
             </div>
             <div id="nav-bar">
-                <button>
+                <button class="nav-button">
                     <img src="magnify.svg" id="search" alt="Search"/>
                 </button>
                 <div id="searchbar"></div>
-                <button>
+                <button class="nav-button">
                     <img src="bell-ring-outline.svg" alt="Notifications"/>
                 </button>
-                <button>
+                <button class="nav-button">
                     <img src="face-man.svg" alt="Profile"/>
                 </button>
-                <button>Morgan Oakley</button>
+                <button id="u-profile-name"><span>Jonathan Dawson</span></button>
             </div>
         </header>
         <div id="sidebar">
@@ -34,7 +39,7 @@
                     </button>
                 </li>
                 <li>
-                    <button>
+                    <button class="si-but-name">
                         Home
                     </button>
                 </li>
@@ -44,7 +49,7 @@
                     </button>
                 </li>
                 <li>
-                    <button>
+                    <button class="si-but-name">
                         Profile
                     </button>
                 </li>
@@ -54,7 +59,7 @@
                     </button>
                 </li>
                 <li>
-                    <button>
+                    <button class="si-but-name">
                         Messages
                     </button>
                 </li>
@@ -64,7 +69,7 @@
                     </button>
                 </li>
                 <li>
-                    <button>
+                    <button class="si-but-name">
                         History
                     </button>
                 </li>
@@ -74,7 +79,7 @@
                     </button>
                 </li>
                 <li>
-                    <button>
+                    <button class="si-but-name">
                         Tasks
                     </button>
                 </li>
@@ -84,7 +89,7 @@
                     </button>
                 </li>
                 <li>
-                    <button>
+                    <button class="si-but-name">
                         Communities
                     </button>
                 </li>
@@ -96,7 +101,7 @@
                     </button>
                 </li>
                 <li>
-                    <button>
+                    <button class="si-but-name">
                         Settings
                     </button>
                 </li>
@@ -106,7 +111,7 @@
                     </button>
                 </li>
                 <li>
-                    <button>
+                    <button class="si-but-name">
                         Support
                     </button>
                 </li>
@@ -116,7 +121,7 @@
                     </button>
                 </li>
                 <li>
-                    <button>
+                    <button class="si-but-name">
                         Privacy
                     </button>
                 </li>
@@ -127,7 +132,7 @@
                 <img src="face-man.svg" alt="Profile"/>
             </button>
             <div id="welcome">Hi there,</div>
-            <div id="at">Morgan Oakley (@morgan)</div>
+            <div id="at">Jonathan Dawson <em>(@Jonathan)</em></div>
             <button id="new">New</button>
             <button id="upload">Upload</button>
             <button id="share">Share</button>
