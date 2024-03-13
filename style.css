@@ -1,5 +1,5 @@
 * {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     font-family: "Roboto", sans-serif;
 }
 
@@ -7,8 +7,8 @@ body {
     height: 100vh;
     margin: 0%;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: minmax(55px, 6vh) minmax(75px, 8vh)  43vh 43vh;
+    grid-template-columns: minmax(120px, 20vw) 60vw 20vw;
+    grid-template-rows: minmax(30px, 6vh) minmax(40px, 8vh) 43vh 43vh;
     overflow: auto;
 }
 
@@ -33,7 +33,7 @@ span {
 header {
     grid-column: 1 / 4;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: minmax(120px, 20vw) 80vw;
 }
 
 #logo {
@@ -44,7 +44,6 @@ header {
     align-items: center;
     justify-content: center;
     height: 100%;
-    min-width: 190px;
 }
 
 #dashboard-logo {
@@ -53,7 +52,7 @@ header {
 }
 
 #logo p {
-    font-size: 1.8vw;
+    font-size: minmax(6px, 1.8vw);
 }
 
 #nav-bar {
@@ -76,7 +75,7 @@ header {
     width: 95%;
     height: 70%;
     border-radius: 20px;
-    background-color: #e0f2fe;
+    background-color: #0ea5e9;
 }
 
 #u-profile-name {
@@ -94,15 +93,15 @@ header {
     grid-area: 2 / 1 / 5 / 2;
     background-color: #0ea5e9;
     display: grid;
-    grid-template-rows: minmax(220px, 34%) minmax(120px, 33%) minmax(0px, 33%);
-    gap: 40px;
-    min-width: 190px;
+    grid-template-rows: minmax(210px, 40%) minmax(210px, 40%) 20%;
+    margin-left: 0;
 }
 
 #navigation, #settings {
     display: grid;
-    grid-template-columns: minmax(50px,1fr) 6fr;
-    grid-template-rows: repeat(auto-fill, 40px);
+    grid-template-columns: 15% 85%;
+    grid-template-rows: repeat(auto-fill, minmax(30px, 1vh));
+    gap: 5px;
     height: 100%;
     align-items: center;
 }
@@ -110,6 +109,10 @@ header {
 #navigation li, #settings li {
     height: 100%;
     align-items: center;
+}
+
+#sidebar ul {
+    padding-left: 20px;
 }
 
 #sidebar li button {
@@ -125,7 +128,7 @@ header {
 }
 
 .si-but-name {
-    font-size: 1.5vw;
+    font-size: minmax(6px, 3vw);
 }
 
 /*
@@ -137,8 +140,8 @@ header {
 #account {
     grid-area: 2 / 2 / 3 / 4;
     display: grid;
-    grid-template-columns: minmax(60px, 1fr) 8fr 2fr 2fr 2fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: minmax(60px, 7%) 51% 14% 14% 14%;
+    grid-template-rows: 34% 66%;
     height: 100%;
     align-items: center;
     justify-items: center;
@@ -153,7 +156,7 @@ header {
 #welcome {
     grid-area: 1 / 2 / 2 / 3;
     justify-self: start;
-    font-size: 1vw;
+    font-size: 2.6vh;
 }
 
 #at {
@@ -186,10 +189,14 @@ header {
 
 main {
     grid-area: 3 / 2 / 5 / 3;
+    background-color: #e0f2fe;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 main p {
     margin: 25px;
+    font-size: 2.3vw;
 }
 
 #card-section {
@@ -206,16 +213,23 @@ main p {
     height: 400px;
     margin: 15px;
     display: grid;
-    grid-template-columns: 6fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
     grid-template-rows: minmax(40px, 1fr) 20fr 2fr; 
+    border-radius: 10px;
+    border-left: 8px solid #082f49;
+    background-color: white;
+    box-shadow: 5px 5px 5px grey;
 }
 
 .card-title {
     grid-area: 1 / 1 / 2 / 5;
+    font-size: calc(10px + 1vw);
+    font-weight: 700;
 }
 
 .card-text {
     grid-area: 2 / 1 / 3 / 5;
+    font-size: calc(6px + 1vw);
 }
 
 .star {
@@ -232,6 +246,8 @@ main p {
 
 .star, .eye, .linky {
     margin: 10px;
+    height: auto;
+    width: 80%;
     align-self: center;
 }
 
